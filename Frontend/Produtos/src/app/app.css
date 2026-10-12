@@ -1,0 +1,120 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f3f6f4;
+  color: #23352c;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.subtitulo {
+  color: #39835a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 4px 0;
+  font-size: 2.4rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.cartao,
+.lista {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #dce5de;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 14px #20382a0d;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input {
+  margin-bottom: 8px;
+  padding: 11px;
+  border: 1px solid #cbd7ce;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.botoes,
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #286b45;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.botao-secundario,
+.botao-editar {
+  background: #65756a;
+}
+
+.botao-excluir {
+  background: #a53e3e;
+}
+
+.mensagem {
+  color: #286b45;
+}
+
+.erro {
+  color: #a53e3e;
+}
+
+.vazio {
+  color: #65756a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e5ebe6;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .cartao,
+  .lista {
+    padding: 16px;
+  }
+
+  .acoes {
+    flex-direction: column;
+  }
+}
